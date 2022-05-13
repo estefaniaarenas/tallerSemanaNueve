@@ -57,7 +57,7 @@ export class CalculadoraComponent implements OnInit {
     return;
     } else {
       this.resultado = this.num1 - this.num2;
-      this.valido = 'La operación de la súma correcta';
+      this.valido = 'La operación de la resta es correcta';
     }
 
     
@@ -78,7 +78,7 @@ export class CalculadoraComponent implements OnInit {
     return;
     } else {
       this.resultado = this.num1 * this.num2;
-      this.valido = 'La operación de la súma correcta';
+      this.valido = 'La operación de la múltiplicación es correcta';
     }
 
     
@@ -99,7 +99,7 @@ export class CalculadoraComponent implements OnInit {
     return;
     } else {
       this.resultado = this.num1 / this.num2;
-      this.valido = 'La operación de la súma correcta';
+      this.valido = 'La operación de la división correcta';
     }
 
     
