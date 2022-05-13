@@ -1,0 +1,24 @@
+<p>
+    <mat-toolbar class="barra">
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon class="i">menu</mat-icon>
+      </button>
+      
+    
+     <mat-menu #menu="matMenu">
+     <button mat-menu-item routerLink="/desarrolladora">Desarrolladora</button>
+     <button mat-menu-item routerLink="/calculadora">Calculadora</button>
+     <button mat-menu-item routerLink="/formulario-donaciones">Donaciones</button>
+     
+     </mat-menu>
+      <span class="n">MI PROYECTO</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon class="i">favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon class="i">share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </p>
+  

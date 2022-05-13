@@ -1,0 +1,44 @@
+<section class="page-container container2">
+    <h1 class="cal">{{titulo}}</h1>
+     <div class="alert alert-success alert-dismissible fade show" role="alert" *ngIf="valido">
+         <strong>{{valido}}</strong> 
+         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"(click)="cerrar()" ></button>
+       </div>
+ 
+       <div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf="invalido">
+         <strong>{{invalido}}</strong> 
+         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"(click)="cerrar()" ></button>
+       </div>
+ 
+   <div class="form-group my-5">
+       <div class="row">
+           <div class="col-12">
+              <label for="">Número 1</label>
+              <input type="number" class="form-control" placeholder="Ingrese un número" [(ngModel)]="num1">
+           </div>
+           
+           <div class="col-12">
+             <label for="">Número 2</label>
+             <input type="number" class="form-control" placeholder="Ingrese un número" [(ngModel)]="num2">
+          </div>
+ 
+          <div class="col-12 my-2">
+             <input type="Button" value="sumar" class="bot m-1"(click)="sumar()">
+             <input type="Button" value="restar" class="bot m-1"(click)="restar()">
+             <input type="Button" value="multiplicar" class="bot m-1"(click)="multiplicar()">
+             <input type="Button" value="dividir" class="bot m-1"(click)="dividir()">
+          </div>
+ 
+          <div class="col-12">
+             
+             <label for="">Total</label>
+             <input type="text" class="form-control" placeholder="Resultado :{{resultado}}">
+            
+          </div>
+ 
+ 
+       </div>
+   </div>
+ 
+ 
+ </section>

@@ -1,0 +1,18 @@
+h1{
+    text-align:center;
+    color:#FFB2A6;
+    font-size:50px;
+}
+
+.b{
+        background-color:#FFF89A ;
+        border:0px;
+        border-radius:6px;
+        width:150px;
+        height:60px;
+        
+    }
+.bnc{
+    display:flex;
+    justify-content:center;
+}
